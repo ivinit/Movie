@@ -20,7 +20,7 @@ function searchMov() {
   // Replace the API_URL with the actual API endpoint
   document.getElementById('loading').style.display = 'block';
   console.log('clicked');
-  movHead.textContent = `Search results for ${mov.value}`;
+  movHead.textContent = `Search results for "${mov.value}"`;
   postersContainer.innerHTML = '';
 
   const API_URL = `https://www.omdbapi.com/?apikey=7ceb24d1&s=${mov.value}`;
